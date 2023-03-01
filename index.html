@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <img id="imagem" src="img/testecei3.png">
+    <img id="logo" src="img/testecei3.png">
     <div class="container">
         <div class="header">
             <span>Cadastro de Alimentos</span>
@@ -24,9 +24,9 @@
             <table>
                 <thead><!--linha de cabeçalho, utilizado para destacar os títulos de uma tabela-->
                     <tr>
+                        <th>Qtd</th>
                         <th>Produto</th>
-                        <th>Quantidade</th>
-                        <th>Medida</th>
+                        <th>Und</th>
                         <th class="acao">Editar</th>
                         <th class="acao">Excluir</th>
                     </tr>
@@ -39,14 +39,15 @@
         <!--Formulario-->
         <div class="modal-container">
             <div class="modal">
+                <div class="close-modal"></div>
                 <form>
-                    <label for="m-produto">Produto</label>
-                    <input id="m-produto" type="text" required />
-
                     <label for="m-quant">Quantidade</label>
                     <input id="m-quant" type="number" required />
 
-                    <label for="m-unmedida">Medida</label>
+                    <label for="m-produto">Produto</label>
+                    <input id="m-produto" type="text" required />
+
+                    <label for="m-unmedida">Unidade</label>
                     <input id="m-unmedida" type="text" required />
                     <button id="btnSalvar">Salvar</button>
                 </form>
