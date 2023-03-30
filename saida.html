@@ -6,54 +6,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CeiFoods</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="shortcut icon" href="img/favicon_io/android-chrome-512x512.png">
+    <link rel="shortcut icon" href="../img/favicon_io/android-chrome-512x512.png">
 </head>
 
 <body>
-    <img id="imagem" src="img/testecei3.png">
+    <img id="logo" src="./img/testecei3.png">
     <div class="container">
         <div class="header">
-            <span>Cadastro de Alimentos</span>
-            <button onclick="openModal()" id="new">Incluir</button>
+            <span>Saída de Alimentos</span>
         </div>
-
+        <div class="button-container">
+            <a id="new" href="entrada.html">Voltar para tela de Entrada</a>
+            <!-- onclick="openModal()" id="new" href="index.html">Home</a> -->
+            <a onclick="openModal()" id="btnSaida">Saída</a>
+        </div>
         <!--Cabeçalho Tabelas-->
         <div class="divTable">
             <table>
                 <thead><!--linha de cabeçalho, utilizado para destacar os títulos de uma tabela-->
                     <tr>
+                        <th>Qtd</th>
                         <th>Produto</th>
-                        <th>Quantidade</th>
                         <th>Medida</th>
                         <th class="acao">Editar</th>
                         <th class="acao">Excluir</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody id="minhaLista">
                 </tbody>
             </table>
         </div>
 
-        <!--Formulario-->
+        <!--Form-->
         <div class="modal-container">
+            <!--formulario 1-->
             <div class="modal">
+                <div class="close-modal"></div>
                 <form>
-                    <label for="m-produto">Produto</label>
-                    <input id="m-produto" type="text" required />
-
                     <label for="m-quant">Quantidade</label>
                     <input id="m-quant" type="number" required />
 
+                    <label for="m-produto">Produto</label>
+                    <input id="m-produto" type="text" required />
+
                     <label for="m-unmedida">Medida</label>
                     <input id="m-unmedida" type="text" required />
-                    <button id="btnSalvar">Salvar</button>
+                    <a id="btnSalvar">Salvar saída</a>
                 </form>
             </div>
         </div>
     </div>
-    <script src="js/script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

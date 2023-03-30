@@ -1,9 +1,12 @@
 const modal = document.querySelector('.modal-container')
+const modalClose = document.querySelector('.close-modal')
 const tbody = document.querySelector('tbody')
 const sProduto = document.querySelector('#m-produto')
 const sQuantidade = document.querySelector('#m-quant')
 const sMedida = document.querySelector('#m-unmedida')
 const btnSalvar = document.querySelector('#btnSalvar')
+const closeModal = document.querySelector('.close-modal')
+
 
 let itens /*var que vai armazenar os itens no nosso banco*/
 let id /*var que vai armazenar os index, para fazermos a ação de edição(editar)*/
@@ -29,14 +32,14 @@ function insertItem(item, index) {
     let tr = document.createElement('tr')
 
     tr.innerHTML = `
-        <td>${item.produto}</td>
         <td>${item.quantidade}</td>
+        <td>${item.produto}</td>
         <td>${item.medida}</td>
         <td class='acao'>
-            <button onclick='editItem(${index})'><i class='bx bx-edit'></i></button>
+            <a onclick='editItem(${index})'><i class='bx bx-edit'></i></a>
         </td>
         <td class='acao'>
-            <button onclick='deleteItem(${index})'><i class='bx bx-trash'></i></button>
+            <a onclick='deleteItem(${index})'><i class='bx bx-trash'></i></a>
         </td>
     `
     tbody.appendChild(tr)
@@ -77,6 +80,7 @@ function openModal(edit = false, index = 0) {
     }
 }
 
+
 btnSalvar.onclick = e => {
 
     if (sProduto.value == '' || sQuantidade.value == '' || sMedida.value == '') {
@@ -99,6 +103,11 @@ btnSalvar.onclick = e => {
     loadItens()
     id = undefined
 }
+
+closeModal.addEventListener('click', () =>{
+    modal.classList.remove('active');
+})
+
 
 
 

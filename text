@@ -1,0 +1,35 @@
+// $dbHost = 'localhost';
+// $dbUsername = 'admin';
+// $dbPassword = '';
+// $dbName = 'produtoalimentos';
+
+// Cria a conexão
+// $conexao = new mysqli($servername, $username, $password, $dbname);
+$conexao = mysqli_connect($servername, $username, $password, $dbname);
+
+// Checa a conexão
+// if ($conexao->connect_error) {
+//     echo("Conexão falhou: " . $conexao->connect_error);
+// } else {
+//     echo "Conexão efetuada com sucesso";
+// }
+if(!$conexao){
+    echo('Houve um erro: '.mysqli_connect_error());
+}
+else{
+    echo('Conexão com sucesso!');
+}
+
+// criando a conexão //
+
+// $sql = "SELECT * FROM entradaprodutos";
+// $result = $conn->query($sql);
+
+// if ($result->num_rows > 0) {
+//     // Exibe cada registro
+//     while($row = $result->fetch_assoc()) {
+//         echo "qtd: " . $row["qtd"]. " - prod: " . $row["prod"]. " - medida: " . $row["medida"]. " - email: " . $row["email"];
+//     }
+// } else {
+//     echo "0 resultados";
+// }
