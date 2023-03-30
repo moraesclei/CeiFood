@@ -7,7 +7,6 @@
   font-family: "Poppins", sans-serif;
 }
 
-<<<<<<< HEAD
 #logo {
   display: block;
   width: 160px;
@@ -36,34 +35,12 @@ body {
   /*background-color: rgba(0,0,0,0.1);*/
   /*background: #1e1f1c;*/
   background: rgb(31, 31, 31);
-=======
-#logo{
-    display: block;
-    width: 160px;
-    height: 160px;
-    border-radius: 10px;
-    margin: 32px 0;
-}
-
-body {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /*background-color: rgba(0,0,0,0.1);*/
-    /*background: #1e1f1c;*/
-    background: rgb(31, 31, 31);
-    padding: 0 16px;
-    
->>>>>>> b9ce3991fd6940d48f4fa30eef554bc976035788
 }
 
 a {
   cursor: pointer;
 }
 
-<<<<<<< HEAD
 .container {
   width: 90%;
   height: 55%;
@@ -73,17 +50,6 @@ a {
   background-color: rgba(0, 0, 0, 0.3);
   box-shadow: 0px 3px 4px #f1952a;
   /*background: rgb(2,0,36);
-=======
-.container{
-    width: 100%;
-    min-height: 55%;
-    max-width: 1024px;
-    border-radius: 10px;
-    background: white;
-    background-color: rgba(0, 0, 0, 0.3);
-    box-shadow:0px 3px 4px #f1952a;
-    /*background: rgb(2,0,36);
->>>>>>> b9ce3991fd6940d48f4fa30eef554bc976035788
     background: linear-gradient(90deg, rgb(250, 233, 3) 0%, rgb(27, 27, 25) 100%);*/
 }
 /*
@@ -158,18 +124,11 @@ a {
 }
 
 /*Config da tabela*/
-<<<<<<< HEAD
 table {
   width: 100%;
   /*border-spacing: 10px;*/
   word-break: break-all;
   /*border-collapse: collapse;*/
-=======
-table{
-    width: 100%;
-    word-break: break-all;
-    /*border-collapse: collapse;*/
->>>>>>> b9ce3991fd6940d48f4fa30eef554bc976035788
 }
 
 thead {
@@ -177,25 +136,11 @@ thead {
 }
 
 tr {
-<<<<<<< HEAD
   border-bottom: 3px solid rgb(238, 235, 235) !important;
 }
 
 thead tr th {
   text-align: start;
-=======
-    border-bottom: 3px solid rgb(238, 235, 235)!important;
-}
-
-thead tr th {
-    text-align: start;
-}
-
-tbody tr td{
-    padding: 6px;
-    max-width: 50px;
-    color: whitesmoke;
->>>>>>> b9ce3991fd6940d48f4fa30eef554bc976035788
 }
 
 tbody tr td {
@@ -205,17 +150,11 @@ tbody tr td {
   color: whitesmoke;
 }
 
-<<<<<<< HEAD
 thead tr th {
   padding: 2px;
   text-align: start;
   margin-bottom: 50px;
   text-align: center;
-=======
-tbody tr{
-    text-align: center;
-    margin-bottom: 50px;
->>>>>>> b9ce3991fd6940d48f4fa30eef554bc976035788
 }
 
 tbody tr {
@@ -229,51 +168,8 @@ thead tr th.acao {
   text-align: center;
 }
 
-<<<<<<< HEAD
 tbody tr td.acao {
   text-align: center;
-=======
-@media (max-width: 700px){
-    body{
-        font-size: 12px;
-    }
-
-    .header span{
-        font-size: 15px;
-    }
-
-    #new{
-        padding: 5px;
-        font-size: 10px;
-    }
-
-    thead tr th.acao{
-        width: auto!important;
-    }
-
-    td button i{
-        font-size: 18px!important;
-        
-    }
-    td button i:first-child{
-        margin-right: 0;
-        
-    }
-
-    .modal{
-        width: 90%!important;
-    }
-
-    .modal label{
-        font-size: 12px!important;
-    }
-
-    #logo {
-        width: 80px;
-        height: 80px;
-        margin: 16px;
-    }
->>>>>>> b9ce3991fd6940d48f4fa30eef554bc976035788
 }
 
 @media (max-width: 700px) {
@@ -335,7 +231,6 @@ tbody tr td.acao {
 }
 
 /*div do meu formulario*/
-<<<<<<< HEAD
 .modal {
   position: relative;
   display: flex;
@@ -350,77 +245,6 @@ tbody tr td.acao {
 .modal label {
   font-size: 14px;
   width: 100%;
-=======
-.modal{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 40px;
-    background-color: white;
-    border-radius: 10px;
-    width: 50%;
-}
-.modal label{
-    font-size: 14px;
-    width: 100%;
-}
-.modal input{
-    width: 100%;
-    outline: none;
-    padding: 5px 10px;
-    width: 100%;
-    margin-bottom: 20px;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-}
-.modal button{
-    width: 100%;
-    margin: 10px auto;
-    outline: none;
-    border-radius: 20px;
-    padding: 5px 10px;
-    width: 100%;
-    border: none;
-    background-color: rgb(57, 57, 226);
-    color: white;
-}
-
-.close-modal {
-    position: absolute;
-    top: 24px;
-    right: 40px;
-    cursor: pointer;
-    width: 24px;
-    height: 24px;
-}
-
-.close-modal::before, .close-modal::after  {
-    content: "";
-    position: absolute;
-    top: 5px;
-    left: 11px;
-    width: 3px;
-    height: 16px;
-    background-color: black;
-    border-radius: 100px;
-}
-
-.close-modal::before {
-    transform: rotate(45deg);
-}
-
-.close-modal::after {
-    transform: rotate(-45deg);
-}
-
-.active{
-    display: flex;
-}
-.active .modal{
-    animation: modal .4s;
->>>>>>> b9ce3991fd6940d48f4fa30eef554bc976035788
 }
 
 .modal input {
@@ -466,13 +290,8 @@ tbody tr td.acao {
   border-radius: 100px;
 }
 
-<<<<<<< HEAD
 .close-modal::before {
   transform: rotate(45deg);
-=======
-td button i:first-child{
-    color: whitesmoke;
->>>>>>> b9ce3991fd6940d48f4fa30eef554bc976035788
 }
 
 .close-modal::after {
