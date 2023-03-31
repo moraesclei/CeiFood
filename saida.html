@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -19,8 +19,6 @@
         </div>
         <div class="button-container">
             <a id="new" href="entrada.html">Voltar para tela de Entrada</a>
-            <!-- onclick="openModal()" id="new" href="index.html">Home</a> -->
-            <a onclick="openModal()" id="btnSaida">Saída</a>
         </div>
         <!--Cabeçalho Tabelas-->
         <div class="divTable">
@@ -30,35 +28,30 @@
                         <th>Qtd</th>
                         <th>Produto</th>
                         <th>Medida</th>
-                        <th class="acao">Editar</th>
-                        <th class="acao">Excluir</th>
+                        <th class="acao">Ação</th>
                     </tr>
                 </thead>
-                <tbody id="minhaLista">
-                </tbody>
+                <tbody id="minhaLista"></tbody>
             </table>
         </div>
 
         <!--Form-->
-        <div class="modal-container">
+        <div class="modal-saida-container">
             <!--formulario 1-->
-            <div class="modal">
-                <div class="close-modal"></div>
+            <div class="modal-saida">
+                <div class="close-modal" onclick="closeModal()"></div>
                 <form>
                     <label for="m-quant">Quantidade</label>
                     <input id="m-quant" type="number" required />
 
-                    <label for="m-produto">Produto</label>
-                    <input id="m-produto" type="text" required />
+                    <p class="aviso"></p>
 
-                    <label for="m-unmedida">Medida</label>
-                    <input id="m-unmedida" type="text" required />
-                    <a id="btnSalvar">Salvar saída</a>
+                    <button type="submit" id="salvar-saida">Salvar saída</button>
                 </form>
             </div>
         </div>
     </div>
-    <script src="./js/script.js"></script>
+    <script src="./js/saida.js"></script>
 </body>
 
 </html>

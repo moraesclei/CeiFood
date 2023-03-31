@@ -34,7 +34,6 @@ function insertItem(item, index) {
     tr.innerHTML = `
         <td>${item.quantidade}</td>
         <td>${item.produto}</td>
-        <td>${item.produto}</td>
         <td>${item.medida}</td>
         <td class='acao'>
             <a onclick='editItem(${index})'><i class='bx bx-edit'></i></a>
